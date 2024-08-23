@@ -9,7 +9,7 @@ Ohjelman nimi on Quick Hasher ja se on tehty hash settien tekemiseen ja siihen e
 - verrata kansiossa olevia tiedostoja johonkin tiettyyn hashsettiin
 
 ## Miksi Quick Hasher
-Quick hasher on nimensä mukaisesti nopea eli voit suorittaa isompiakin operaatiotai Quick Hasherillä nopeasti. Quick Hasher tukee myös useampia hajautusalgoritmejä jolloin käyttäjä voi käyttää juuri sitä algoritmiä joka sopii hänen mielestään parhaiten siihen tilanteeseen
+Quick hasher on nimensä mukaisesti nopea eli voit suorittaa isompiakin operaatiotai Quick Hasherillä nopeasti. Quick Hasher tukee myös useampia hajautusalgoritmejä jolloin käyttäjä voi käyttää juuri sitä algoritmiä joka sopii parhaiten siihen tilanteeseen
 ### Arvosteluja
 Paavo Pesusieni (5/5)
 > En ole koskaan käyttänyt näin nopeaa hajautussovelusta. Kaikki toimii niin nopeasti ja sulavasti:
