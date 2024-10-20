@@ -24,7 +24,7 @@ namespace Quick_Hasher
             CreateSet createSet = new CreateSet();
             createSet.Show();
             StartMenu startmenu = new StartMenu();
-            startmenu.Close();
+            startmenu.Hide();
         }
 
         private void StartMenu_FormClosed(object sender, FormClosedEventArgs e)
