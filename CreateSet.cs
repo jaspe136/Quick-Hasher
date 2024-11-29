@@ -62,12 +62,15 @@ namespace Quick_Hasher
             {
                 inputFolderTextbox.Text = FolderSelect.SelectedPath;
             }
-            fileList = Directory.GetFiles(inputFolderTextbox.Text, "*.*", SearchOption.AllDirectories);
-            if (fileList.Length != 0)
+            if (inputFolderTextbox.Text != "")
             {
-                filesLoaded = true;
+                fileList = Directory.GetFiles(inputFolderTextbox.Text, "*.*", SearchOption.AllDirectories);
+                if (fileList.Length != 0)
+                {
+                    filesLoaded = true;
+                }
+                textBox6.Text = $"{fileList.Length} file(s) loaded";
             }
-            textBox6.Text = $"{fileList.Length} file(s) loaded";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -123,7 +126,7 @@ namespace Quick_Hasher
                     DialogResult result = MessageBox.Show("The selected output folder already contains a sha hashfile that will be overwritten", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                     if (result == DialogResult.OK)
                     {
-                        WriteMD5(combinedSHA256path);
+                        WriteSHA256(combinedSHA256path);
                     }
                     else
                     {
@@ -132,7 +135,7 @@ namespace Quick_Hasher
                 }
                 else
                 {
-                    WriteMD5(combinedSHA256path);
+                    WriteSHA256(combinedSHA256path);
                 }
             }
             else
@@ -158,7 +161,7 @@ namespace Quick_Hasher
                         string md5Hash = CalculateMD5(filePath);
                         writer.WriteLine(md5Hash);
                         
-                        System.Diagnostics.Debug.WriteLine($"Hash Calculated from {filePath}");
+                        System.Diagnostics.Debug.WriteLine($"md5 Hash Calculated from {filePath}");
                         progressBar1.Value = ++filesCalculated;
                     }
                     catch (Exception ex)
@@ -203,7 +206,7 @@ namespace Quick_Hasher
                         string Sha256Hash = CalculateSHA256(filePath);
                         writer.WriteLine(Sha256Hash);
 
-                        System.Diagnostics.Debug.WriteLine($"Hash Calculated from {filePath}");
+                        System.Diagnostics.Debug.WriteLine($"sha256 Hash Calculated from {filePath}");
                         progressBar1.Value = ++filesCalculated;
                         
                     }

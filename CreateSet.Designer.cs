@@ -218,6 +218,7 @@
             Controls.Add(textBox2);
             Controls.Add(comboBox1);
             Controls.Add(textBox1);
+            MaximizeBox = false;
             Name = "CreateSet";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Quick Hasher";

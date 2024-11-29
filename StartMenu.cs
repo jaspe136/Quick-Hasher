@@ -16,7 +16,10 @@ namespace Quick_Hasher
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            CompareSet compareSet = new CompareSet();
+            compareSet.Show();
+            StartMenu startmenu = new StartMenu();
+            startmenu.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
