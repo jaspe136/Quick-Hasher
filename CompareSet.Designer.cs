@@ -146,6 +146,7 @@
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Hash, Match_found });
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1008, 452);
             dataGridView1.TabIndex = 9;
@@ -155,12 +156,14 @@
             Column1.HeaderText = "filename";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
+            Column1.ReadOnly = true;
             // 
             // Hash
             // 
             Hash.HeaderText = "Hash";
             Hash.MinimumWidth = 6;
             Hash.Name = "Hash";
+            Hash.ReadOnly = true;
             // 
             // Match_found
             // 
@@ -168,6 +171,7 @@
             Match_found.HeaderText = "Match Found";
             Match_found.MinimumWidth = 6;
             Match_found.Name = "Match_found";
+            Match_found.ReadOnly = true;
             Match_found.Width = 124;
             // 
             // button3
