@@ -33,6 +33,7 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -64,6 +65,7 @@
             textBox1.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(286, 38);
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(231, 45);
             textBox1.TabIndex = 2;
             textBox1.Text = "Quick Hasher";
@@ -74,6 +76,7 @@
             // 
             textBox2.Location = new Point(471, 155);
             textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
             textBox2.Size = new Size(191, 27);
             textBox2.TabIndex = 3;
             textBox2.Text = "Compare files/folders";
@@ -83,16 +86,29 @@
             // 
             textBox3.Location = new Point(175, 155);
             textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 4;
             textBox3.Text = "Create Hash Set";
             textBox3.TextAlign = HorizontalAlignment.Center;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.Location = new Point(286, 402);
+            button3.Name = "button3";
+            button3.Size = new Size(267, 25);
+            button3.TabIndex = 5;
+            button3.Text = "Saved data";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // StartMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -115,5 +131,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
+        private Button button3;
     }
 }
